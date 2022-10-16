@@ -58,7 +58,7 @@ return packer.startup(function(use)
   use "hrsh7th/nvim-cmp" -- Autocompletion plugin
   use 'L3MON4D3/LuaSnip' -- Snippets engine
   use 'hrsh7th/cmp-nvim-lsp' -- LSP source
-  use 'saadparwaiz1/cmp_luasnip' -- nvim-cmp source 
+  use 'saadparwaiz1/cmp_luasnip' -- nvim-cmp source
   use "hrsh7th/cmp-path" -- path source
   use "hrsh7th/cmp-buffer" -- buffer source
   use "hrsh7th/cmp-nvim-lua" -- lua source
@@ -66,6 +66,12 @@ return packer.startup(function(use)
 
   -- telescope
   use "nvim-telescope/telescope.nvim"
+
+  -- treesitter
+  use {
+    "nvim-treesitter/nvim-treesitter",
+    run = ":TSUpdate",
+  }
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
