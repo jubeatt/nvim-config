@@ -16,13 +16,11 @@ local function lsp_keymaps(bufnr)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
   -- 到那個 type 定義的地方
   vim.keymap.set('n', 'gt', vim.lsp.buf.type_definition, opts)
-  vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
+  vim.keymap.set('n', 'D', vim.lsp.buf.hover, opts)
   vim.keymap.set('n', '<C-s>', vim.lsp.buf.signature_help, opts)
   vim.keymap.set('n', '<F2>', vim.lsp.buf.rename, opts)
   -- 對這個 diagnostic 做事情（例如：disable line）
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
-  -- format 排版
-  vim.keymap.set('n', '<leader>r', function() vim.lsp.buf.format { async = true } end, opts)
 end
 
 -- set highlight effect

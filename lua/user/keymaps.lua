@@ -37,8 +37,8 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-w>", ":Bdelete<cr>", opts)
 
 -- Move text up and down
-keymap("n", "<S-j>", "<Esc>:m .-2<CR>==gi", opts)
-keymap("n", "<S-k>", "<Esc>:m .+1<CR>==gi", opts)
+keymap("n", "<S-k>", ":m -2<CR>", opts)
+keymap("n", "<S-j>", ":m +1<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
@@ -74,3 +74,6 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- Null-ls
+keymap("n", "<leader>r", "<cmd>lua vim.lsp.buf.format()<cr>", opts)
