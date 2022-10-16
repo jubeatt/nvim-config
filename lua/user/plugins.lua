@@ -54,6 +54,16 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig"
   use "williamboman/mason.nvim"
 
+  -- cmp
+  use "hrsh7th/nvim-cmp" -- Autocompletion plugin
+  use 'L3MON4D3/LuaSnip' -- Snippets engine
+  use 'hrsh7th/cmp-nvim-lsp' -- LSP source
+  use 'saadparwaiz1/cmp_luasnip' -- nvim-cmp source 
+  use "hrsh7th/cmp-path" -- path source
+  use "hrsh7th/cmp-buffer" -- buffer source
+  use "hrsh7th/cmp-nvim-lua" -- lua source
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets source
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

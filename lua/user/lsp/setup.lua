@@ -16,6 +16,7 @@ handler.setup()
 -- lua
 config['sumneko_lua'].setup {
   on_attach = handler.on_attach,
+  capabilities = handler.capabilities,
   settings = {
     Lua = {
       runtime = {
@@ -28,7 +29,9 @@ config['sumneko_lua'].setup {
       },
       workspace = {
         -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true),
+        -- library = vim.api.nvim_get_runtime_file("", true),
+        [vim.fn.expand("$VIMRUNTIME/lua")] = true,
+        [vim.fn.stdpath("config") .. "/lua"] = true,
       },
       -- Do not send telemetry data containing a randomized but unique identifier
       telemetry = {
@@ -40,9 +43,11 @@ config['sumneko_lua'].setup {
 -- TypeScript
 config['tsserver'].setup {
   on_attach = handler.on_attach,
+  capabilities = handler.capabilities,
 }
 -- Vue
 config['volar'].setup {
   on_attach = handler.on_attach,
+  capabilities = handler.capabilities,
   filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json' }
 }
