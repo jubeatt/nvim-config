@@ -51,3 +51,28 @@ config['volar'].setup {
   capabilities = handler.capabilities,
   filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json' }
 }
+
+-- Eslint
+config['eslint'].setup {
+  on_attach = handler.on_attach,
+  capabilities = handler.capabilities,
+}
+
+-- CSS
+config['cssls'].setup {
+  on_attach = handler.on_attach,
+  capabilities = handler.capabilities
+}
+
+-- Tailwindcss
+config['tailwindcss'].setup {
+  on_attach = handler.on_attach,
+  capabilities = handler.capabilities
+}
+
+-- Emmet_ls 
+config['emmet_ls'].setup {
+  on_attach = handler.on_attach,
+  capabilities = handler.capabilities
+}
+
