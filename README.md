@@ -1,21 +1,26 @@
-# Neovim from scratch
+# Neovim Configuration
 
-## Try out this config
+## 這是什麼？
+
+這是我的 Neovim 配置，內容主要是參考 [Neovim from scratch](https://github.com/LunarVim/Neovim-from-scratch) 這個 Repo 跟他的 [youtube 教學](https://www.youtube.com/watch?v=ctH-a-1eUME&list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ) 來撰寫的。
+
+個人覺得這是很好的參考資源，有空的話很建議參考一下上面貼的連結。
+
+## 使用方式
 
 Make sure to remove or move your current `nvim` directory
 
 ```
-git clone git@github.com:ChristianChiarulli/Neovim-from-scratch.git ~/.config/nvim
+git clone git@github.com:jubeatt/nvim-config.git ~/.config/nvim
 ```
 
-Run `nvim` and wait for the plugins to be installed 
+Run `nvim` and wait for the plugins to be installed
 
-**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim) 
-
+**NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim)
 
 each video will be associated with a branch so checkout the one you are interested in
 
-## Get healthy
+## 檢查健康度
 
 Open `nvim` and enter the following:
 
