@@ -15,3 +15,5 @@ require "user.lsp.null-ls"
 require "user.toggleterm"
 require "user.lualine"
 require "user.diffview"
+require "user.glow"
+

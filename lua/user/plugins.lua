@@ -52,6 +52,8 @@ return packer.startup(function(use)
   use "moll/vim-bbye"
   use "akinsho/toggleterm.nvim"
   use "nvim-lualine/lualine.nvim"
+  use "ellisonleao/glow.nvim" -- markdown previewer (in terminal)
+  use "davidgranstrom/nvim-markdown-preview" -- markdown previewer (in browser)
 
 
   -- Colorschemes
