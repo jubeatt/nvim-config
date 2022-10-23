@@ -35,6 +35,7 @@ keymap("n", "<S-Right>", ":vertical resize -2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-w>", ":Bdelete<cr>", opts)
+keymap("n", "<S-q>", ":Bdelete!<cr>", opts) -- (Force)
 
 -- Move text up and down
 keymap("n", "<S-k>", ":m -2<CR>", opts)
