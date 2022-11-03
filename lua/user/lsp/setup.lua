@@ -40,16 +40,18 @@ config['sumneko_lua'].setup {
     }
   }
 }
+
 -- TypeScript
 config['tsserver'].setup {
   on_attach = handler.on_attach,
   capabilities = handler.capabilities,
 }
+
 -- Vue
 config['volar'].setup {
   on_attach = handler.on_attach,
   capabilities = handler.capabilities,
-  filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json' }
+  -- filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json' }
 }
 
 -- Eslint
@@ -75,4 +77,3 @@ config['emmet_ls'].setup {
   on_attach = handler.on_attach,
   capabilities = handler.capabilities
 }
-
