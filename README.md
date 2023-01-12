@@ -37,6 +37,17 @@ each video will be associated with a branch so checkout the one you are interest
 
 接著就會彈出可安裝的 LSP 列表，找到 `typescript-language-server` 案 i 就可以安裝了。
 
+我目前有裝的是這些：
+
+- lua-language-server
+- css-lsp
+- vue-language-server
+- tailwindcss-language-server
+- emmet-ls
+- typescript-language-server
+- eslint-lsp
+
+
 ## 檢查健康度
 
 Open `nvim` and enter the following:
