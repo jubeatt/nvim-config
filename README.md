@@ -8,7 +8,12 @@
 
 ## 使用方式
 
-Make sure to remove or move your current `nvim` directory
+先安裝好 [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)，接著確定兩件事：
+
+1. 沒有現有的 `~/.config/nvim`資料夾，有的話請刪除
+2. 沒有現有的 `.local/share/nvim/site` 資料夾，有的話請刪除
+
+確定好以後，clone 這份設定檔到 `~/.config/nvim`（底下指令已經寫好指定路徑，直接複製貼上就好）：
 
 ```
 git clone git@github.com:jubeatt/nvim-config.git ~/.config/nvim
@@ -19,6 +24,18 @@ Run `nvim` and wait for the plugins to be installed
 **NOTE** (You will notice treesitter pulling in a bunch of parsers the next time you open Neovim)
 
 each video will be associated with a branch so checkout the one you are interested in
+
+## LSP 服務
+
+這份設定檔使用的 LSP Manager 是 [mason](https://github.com/williamboman/mason.nvim)，所以要先去安裝對應的 LSP 才能開啟服務。
+
+舉例來說，如果我想要安裝 typescript 的 LSP，就要在 neovim 下這段指令：
+
+```bash
+:Mason
+```
+
+接著就會彈出可安裝的 LSP 列表，找到 `typescript-language-server` 案 i 就可以安裝了。
 
 ## 檢查健康度
 
