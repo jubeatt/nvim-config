@@ -54,6 +54,14 @@ each video will be associated with a branch so checkout the one you are interest
 - eslint-lsp
 
 
+## 補充
+
+若要與 git 的編輯器同步，請執行底下指令修改：
+
+```bash
+git config --global core.editor "nvim"
+```
+
 ## 檢查健康度
 
 Open `nvim` and enter the following:
