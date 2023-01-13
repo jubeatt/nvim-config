@@ -6,6 +6,12 @@
 
 個人覺得這是很好的參考資源，有空的話很建議參考一下上面貼的連結。
 
+
+## Requirement
+
+- [ripgrep](https://formulae.brew.sh/formula/ripgrep) Telescope 搜尋功能的依賴項目
+- [prettier](https://www.npmjs.com/package/prettier) Null-ls 執行格式化的依賴項目
+
 ## 使用方式
 
 先安裝好 [neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)，接著確定兩件事：
