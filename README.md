@@ -41,7 +41,7 @@ each video will be associated with a branch so checkout the one you are interest
 :Mason
 ```
 
-接著就會彈出可安裝的 LSP 列表，找到 `typescript-language-server` 案 i 就可以安裝了。
+接著就會彈出可安裝的 LSP 列表，找到 `typescript-language-server` 後再按 i 就可以安裝了。
 
 我目前有裝的是這些：
 
