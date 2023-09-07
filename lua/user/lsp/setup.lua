@@ -14,7 +14,7 @@ mason.setup()
 handler.setup()
 
 -- lua
-config['sumneko_lua'].setup {
+config['lua_ls'].setup {
   on_attach = handler.on_attach,
   capabilities = handler.capabilities,
   settings = {
